@@ -78,8 +78,8 @@ button {
 
 /* Details styles */
 .details {
-  position: absolute;
-  bottom: 18px;
+  position: fixed;
+  bottom: 0px;
   right: 18px;
   display: flex;
   flex-direction: column;
@@ -87,8 +87,8 @@ button {
 }
 
 .details div {
-  width: 75px;
-  height: 75px;
+  width: 70px;
+  height: 70px;
   background-color: #0029ff;
   border-radius: 100%;
   display: flex;
@@ -131,7 +131,6 @@ button {
   height: 742px;
   width: 132px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  /* rgba(0, 0, 0, 0.16) 0px -3px 6px, rgba(0, 0, 0, 0.23) 0px -3px 6px; */
   position: absolute;
   top: 90px;
   border-bottom-right-radius: 20px;
@@ -167,7 +166,7 @@ button {
 .heading {
   width: 1066px;
   height: 46px;
-  border: 1px solid brown;
+  /* border: 1px solid brown; */
   text-align: center;
   margin: auto;
   margin-top: 30px;
@@ -196,9 +195,9 @@ button {
 .about {
   width: 1016px;
   height: 85px;
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
   margin: auto;
-  margin-top: 50px;
+  margin-top: 45px;
   background-color: #e9ecef;
   border-radius: 5px;
   padding: 25px;
@@ -213,4 +212,50 @@ button {
 .about-text {
   font-size: 14px;
   font-weight: 300;
+}
+
+/* Information Grid */
+.infogrid {
+  /* border: 1px solid purple; */
+  width: 1016px;
+  padding: 10px 25px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 90px;
+  display: grid;
+  grid-template-columns: repeat(2, 480px);
+  grid-template-rows: repeat(2, 580px);
+  column-gap: 55px;
+  row-gap: 55px;
+}
+
+.style-grid {
+  /* border: 1px solid plum; */
+  /* height: 580px; */
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 6px, rgba(0, 0, 0, 0.23) 0px 2px 6px,
+    rgba(0, 0, 0, 0.16) 0px -2px 6px, rgba(0, 0, 0, 0.23) 0px -2px 6px;
+}
+
+.sty-grid_head {
+  width: 440px;
+  height: 50px;
+  background-color: #000000;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0px 20px;
+}
+
+.grid-head_icon {
+  width: 22px;
+  height: 22px;
+  color: black;
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
