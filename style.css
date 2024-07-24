@@ -245,11 +245,19 @@ button {
   border-top-right-radius: 15px;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
   padding: 0px 20px;
+  position: relative;
+}
+
+.grid-head_text {
+  color: white;
+  font-size: 16px;
 }
 
 .grid-head_icon {
+  position: absolute;
+  right: 30px;
   width: 22px;
   height: 22px;
   color: black;
@@ -258,4 +266,19 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.infogrid-desc {
+  width: 453px;
+  margin: 16px 23.5px;
+}
+.infogrid-desc span {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.infogrid-desc span:nth-child(1) {
+  font-weight: 450;
+  font-size: 15px;
+  letter-spacing: 0.45px;
 }
