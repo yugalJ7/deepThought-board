@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -283,6 +286,7 @@ button {
   letter-spacing: 0.45px;
 }
 
+/* Third Grid */
 .infogrid_third-content {
   width: 430px;
   height: 399px;
@@ -366,4 +370,154 @@ button {
   height: 5px;
   border-radius: 100%;
   background-color: #616161;
+}
+
+/* Second Grid */
+.second-content_accordian {
+  width: 100%;
+  height: 40px;
+  background-color: #fbfceb;
+  border-top: 2px solid #d1cece;
+  border-bottom: 1px solid #e1dfdf;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 4rem;
+}
+
+.second-content_accordian span {
+  font-size: 23px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+
+.second-content_accordian img {
+  margin-left: 10px;
+}
+
+.second_accordian-features {
+  width: 100%;
+}
+
+.accordian-features_subThread {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.accordian-features_subThread div {
+  width: 199px;
+  height: 99px;
+  background-color: rgba(0, 0, 0, 3%);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 7px;
+  border: 0.5px solid #cecccc;
+}
+
+.accordian-features_subThread > div > input {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 74px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 7px;
+  border-top: 0.5px solid #cecccc;
+}
+
+.accordian-features_subThread > div > span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.accordian-features_process {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 13px;
+  margin-top: 1.5rem;
+  height: 28px;
+  margin-right: 1.8rem;
+}
+
+.accordian-features_process img {
+  width: 20px;
+  height: 20px;
+}
+
+.accordian-features_process div {
+  width: 91px;
+  height: 32px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 9px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.accordian-features_process > div > span {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.accordian-features_process > div > img {
+  width: 10.19px;
+  height: 5.88px;
+}
+
+.accordian-features_button {
+  display: flex;
+  justify-content: start;
+  margin-left: 1.8rem;
+  margin-top: 2rem;
+}
+
+.accordian-features_button button {
+  width: 100px;
+  height: 36px;
+  border-radius: 9px;
+  background-color: #0029ff;
+  border: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.accordian-features_summary {
+  width: 425px;
+  height: 112px;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 3%);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 7px;
+  border: 0.5px solid #cecccc;
+  margin-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordian-features_summary input {
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  height: 83px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 7px;
+  border-top: 0.5px solid #cecccc;
+}
+
+.accordian-features_summary span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  margin-left: 13px;
+  margin-bottom: 6px;
+  margin-top: 4px;
 }
