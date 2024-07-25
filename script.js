@@ -1,3 +1,5 @@
+import { toolbar } from "./constant/data.js";
+
 async function fetchData() {
   try {
     const res = await fetch("./constant/data.json");
@@ -32,3 +34,17 @@ function renderedData(data) {
 }
 
 fetchData();
+
+//Third Grid Toolbar
+function addSpanElement() {
+  toolbar.forEach((item) => {
+    const newSpan = document.createElement("span");
+    newSpan.className = "topbar_text";
+    const content = document.createTextNode(`${item.text}`);
+    newSpan.appendChild(content);
+    const parentDiv = document.querySelector(".third-tools_topbar");
+    parentDiv.appendChild(newSpan);
+  });
+}
+
+addSpanElement();

@@ -53,7 +53,26 @@
     </div>
     <!-- Information Grid -->
     <div class="infogrid">
-      <div class="style-grid">
+      <div class="style-grid infogrid_first">
+        <div class="sty-grid_head">
+          <span class="grid-head_text"></span>
+          <span class="grid-head_icon">i</span>
+        </div>
+        <div class="infogrid-desc">
+          <span>Description :</span>
+          <span></span>
+        </div>
+        <div class="infogrid_first-video">
+          <iframe
+            width="480"
+            height="291"
+            src="https://www.youtube.com/embed/TiMRwri1xJ8"
+            frameborder="0"
+            style="margin-top: 20px"
+          ></iframe>
+        </div>
+      </div>
+      <div class="style-grid infogrid_second">
         <div class="sty-grid_head">
           <span class="grid-head_text"></span>
           <span class="grid-head_icon">i</span>
@@ -63,7 +82,7 @@
           <span></span>
         </div>
       </div>
-      <div class="style-grid">
+      <div class="style-grid infogrid_third">
         <div class="sty-grid_head">
           <span class="grid-head_text"></span>
           <span class="grid-head_icon">i</span>
@@ -71,9 +90,29 @@
         <div class="infogrid-desc">
           <span>Description :</span>
           <span></span>
+        </div>
+        <div class="infogrid_third-content">
+          <h4>Title</h4>
+          <input type="text" />
+          <h4>Content</h4>
+          <div class="third_tools">
+            <div class="third-tools_topbar"></div>
+            <div class="third-tools_bottombar">
+              <img src="./assets/Icon-arrow_left.svg" alt="Left arrow" />
+              <img src="./assets/Icon-arrow_right.svg" alt="Right arrow" />
+              <img src="./assets/Icon-expand.svg" alt="Expand arrow" />
+              <span>Paragraph</span>
+              <div class="bottombar_more">
+                <span class="style-bottomMore"></span>
+                <span class="style-bottomMore"></span>
+                <span class="style-bottomMore"></span>
+              </div>
+            </div>
+          </div>
+          <div class="third_blank"></div>
         </div>
       </div>
-      <div class="style-grid">
+      <div class="style-grid infogrid_fourth">
         <div class="sty-grid_head">
           <span class="grid-head_text"></span>
           <span class="grid-head_icon">i</span>
@@ -82,16 +121,7 @@
           <span>Description :</span>
           <span></span>
         </div>
-      </div>
-      <div class="style-grid">
-        <div class="sty-grid_head">
-          <span class="grid-head_text"></span>
-          <span class="grid-head_icon">i</span>
-        </div>
-        <div class="infogrid-desc">
-          <span>Description :</span>
-          <span></span>
-        </div>
+        <div class=""></div>
       </div>
     </div>
     <!-- Journey & Notice Board -->
@@ -130,6 +160,6 @@
         <img src="./assets/icon-schedule.svg" alt="schedule" />
       </div>
     </div>
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
