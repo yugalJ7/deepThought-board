@@ -113,7 +113,7 @@ function handleBoard(data) {
       parentDiv.style.display = "none";
       header.style.display = "none";
       number.style.display = "block";
-      mainDiv.style.width = "132px";
+      mainDiv.style.width = "102px";
       icon.setAttribute("src", "./assets/journey-right-arrow-icon.svg");
     } else {
       parentDiv.style.display = "block";
