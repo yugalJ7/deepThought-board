@@ -139,30 +139,57 @@ button {
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  z-index: 10;
+  background-color: white;
 }
 .journey-header {
   height: 50px;
-  width: 132px;
+  width: 100%;
   background-color: black;
   border-top-right-radius: 20px;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
+}
+
+.journey-header_text {
+  color: white;
+  margin-left: 15px;
+  font-size: 16px;
+  display: none;
 }
 .journey-header_button {
   width: 39px;
   height: 29px;
   margin-right: 7px;
 }
+
+.journey-content {
+  width: 319px;
+  margin: auto;
+}
+
+.journey-content_list {
+  display: none;
+}
+
+.journey-content > ul > li {
+  font-size: 14px;
+  font-weight: 300;
+}
+
 .journey-content_number {
   width: 68px;
-  height: 68px;
+  height: 61px;
   font-size: 36px;
   color: #0029ff;
   border: solid 1px #0029ff;
   border-radius: 20px;
   margin: auto;
+  padding-top: 7px;
   margin-top: 31px;
+  display: block;
+  text-align: center;
 }
 
 /* Heading & About Section */
@@ -527,6 +554,7 @@ button {
   margin-top: 4px;
 }
 
+/* Fourth Grid Styles */
 .fourth-accordian {
   height: 428px;
   border-top: 1px solid #d1cece;

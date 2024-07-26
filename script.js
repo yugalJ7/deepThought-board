@@ -6,6 +6,7 @@ async function fetchData() {
     const data = await res.json();
     console.log(data);
     renderedData(data);
+    handleBoard(data);
   } catch (error) {
     console.log(error);
   }
@@ -61,7 +62,6 @@ function addSpanElement() {
 addSpanElement();
 
 // Handling Accordian
-
 function handleAccordian(classOne, classTwo) {
   const gridAccordian = document.querySelector(classOne);
 
@@ -84,3 +84,43 @@ handleAccordian(
   ".fourth-accordian_intro-head",
   ".fourth-accordian_intro-content"
 );
+
+//Journey Board
+
+function handleBoard(data) {
+  const assets = data.tasks[0].assets;
+  const mainDiv = document.querySelector(".journey");
+  const button = document.querySelector(".journey-header_button");
+  const parentDiv = document.querySelector(".journey-content_list");
+  const icon = document.querySelector(".journey-header_button");
+  const header = document.querySelector(".journey-header_text");
+  const number = document.querySelector(".journey-content_number");
+
+  const listhead = document.createElement("li");
+  listhead.style.margin = "1rem 0";
+  listhead.style.fontWeight = "600";
+  listhead.appendChild(document.createTextNode(`${data.tasks[0].task_title}`));
+  parentDiv.appendChild(listhead);
+  assets.forEach((element) => {
+    const newlist = document.createElement("li");
+    const content = document.createTextNode(`${element.asset_title}`);
+    newlist.appendChild(content);
+    parentDiv.appendChild(newlist);
+  });
+
+  button.addEventListener("click", function () {
+    if (parentDiv.style.display === "block") {
+      parentDiv.style.display = "none";
+      header.style.display = "none";
+      number.style.display = "block";
+      mainDiv.style.width = "132px";
+      icon.setAttribute("src", "./assets/journey-right-arrow-icon.svg");
+    } else {
+      parentDiv.style.display = "block";
+      header.style.display = "block";
+      number.style.display = "none";
+      mainDiv.style.width = "392px";
+      icon.setAttribute("src", "./assets/journey-left-arrow-icon.svg");
+    }
+  });
+}
